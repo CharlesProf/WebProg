@@ -18,25 +18,15 @@
                         <a class="nav-link" href="/home">Home</a>
                     </li>
                     <li class="nav-item">
-                        <a class="nav-link" href="/search">Search</a>
+                        <a class="nav-link" href="/search">Cart</a>
                     </li>
-
-                    @if (Auth::user()->role == 'user')
-                        <li class="nav-item">
-                            <a class="nav-link" href="/cart">Cart</a>
-                        </li>
-                        <li class="nav-item">
-                            <a class="nav-link" href="/history">History</a>
-                        </li>
-                    @endif
-
                     <li class="nav-item">
-                        <a class="nav-link" href="/profile">Profile</a>
+                        <a class="nav-link" href="/search">Profiil</a>
                     </li>
 
                     @if (Auth::user()->role == 'admin')
                         <li class="nav-item">
-                            <a class="nav-link" href="/add">Add Item</a>
+                            <a class="nav-link" href="/add">Account Maintenance</a>
                         </li>
                     @endif
 
@@ -46,7 +36,7 @@
                 @else
                     <li class="nav-item d-flex flex-row-reverse">
                         <a class="nav-link btn btn-light text-primary" href="/signin">Sign In</a>
-                        <a class="nav-link btn btn-light text-primary" href="/signup">Sign Up</a>
+                        <a class="nav-link btn btn-light text-primary" href="/register">Register</a>
                     </li>
                 @endif
     </div>
