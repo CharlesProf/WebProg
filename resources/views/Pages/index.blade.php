@@ -1,4 +1,4 @@
-@extends('layoutbefore')
+@extends('Layout.layoutbefore')
 
 @section('title', 'Welcome to Amazing E-Grocery')
 

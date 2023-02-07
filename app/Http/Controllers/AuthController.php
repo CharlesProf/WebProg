@@ -8,7 +8,7 @@ class AuthController extends Controller
 {
     //
     public function showSignInPage(){
-        return view('signIn');
+        return view('Pages.signin');
     }
 
     public function login(Request $request){
