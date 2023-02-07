@@ -14,3 +14,6 @@ use App\Http\Controllers\HomeController;
 */
 
 Route::get('/',[HomeController::class , 'showWelcomePage']);
+
+Route::get('/signin',[AuthController::class , 'showSignInPage']);
+Route::post('/signin',[AuthController::class , 'login']);
