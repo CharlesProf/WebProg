@@ -11,8 +11,8 @@
 </head>
 
 <nav class="navbar navbar-expand-lg navbar-light bg-light">
-    <div class="container">
-      <a class="navbar-brand text-primary justify-content-right align-items-right "><b><u>Amazing E-Grocery</u></b></a>
+    <div class="container d-flex flex-column justify-content-center">
+      <a class="navbar-brand text-primary justify-content-center align-items-right "><b><u>Amazing E-Grocery</u></b></a>
                 @if (Auth::check())
                     <li class="nav-item">
                         <a class="nav-link" href="/home">Home</a>
@@ -44,7 +44,7 @@
                         <a class="nav-link btn btn-light text-primary" href="/logout">Sign Out</a>
                     </li>
                 @else
-                    <li class="nav-item">
+                    <li class="nav-item d-flex flex-row-reverse">
                         <a class="nav-link btn btn-light text-primary" href="/signin">Sign In</a>
                         <a class="nav-link btn btn-light text-primary" href="/signup">Sign Up</a>
                     </li>
@@ -52,9 +52,18 @@
     </div>
 </nav>
 
-
-
 <body>
+    <main>
+        @yield('content')
+    </main>
+
+
+    <div class="text-center p-3" style="background-color: rgba(0, 0, 0, 0.2);">
+        © 2020 Copyright:
+        <a class="text-dark">Amazing E-Grocery</a>
+      </div>
+      <!-- Copyright -->
 
 </body>
+
 </html>
